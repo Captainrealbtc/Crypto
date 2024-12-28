@@ -1,0 +1,300 @@
+html{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+:root {
+    --color-1: #fff;
+    --color-2: rgb(255, 255, 255, .8);
+    --color-3: #000;
+    --color-4: #00002c;
+    --color-5: #000024;
+    --color-6: #00b7c5;
+    --color-7: #08d3d3;
+}
+
+/* Company Logo Styles */
+.company-logo {
+    width: 100px;
+    height: 100px;
+    margin: -20px;
+    border: 2px solid #000;
+    border-radius: 50px;
+    box-shadow: 0px 0px 100px #000;
+}
+
+/* Header Styles */
+header {
+    margin: 0;
+    background:#020241;
+   background-color:#02021d;
+    display: flex;
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+}
+
+header nav{
+    width: 70%;
+    height: 70%;
+    margin: auto;
+    border: 1px 0px 1px 0px solid rgb(255, 255, 255, .6);
+    
+}
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000024;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto; /* Ensure the page is scrollable */
+}
+
+.dashboard-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.dashboard-page h1{
+    color: var(--color-1);
+}
+ h2 {
+    color: #1d054b;
+}
+
+/*Profile Picture Styles */
+.profile-picture {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    margin: -190px 10px 0 0;
+   /* background-color: #fff;*/
+    padding: 30px;
+    padding-left: 10px;
+    float: right;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #010e1b;
+}
+
+.profile-picture img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.profile h2 {
+    padding: 10px;
+    margin: 10%;
+}
+
+/* Section Styles */
+.dashboard-cards,
+.recent-transactions,
+.testimonials,
+.deposit-withdrawal-messages,
+.market-data {
+    margin-bottom: 20px;
+    background-color: var(--color-4);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 30px 90px -25px rgb(0, 183, 197, .5);
+    text-align: center;
+}
+
+.dashboard-cards,
+.recent-transactions,
+.testimonials,
+.deposit-withdrawal-messages,
+.market-data h2{
+    color: var(--color-1);
+}
+
+.investment-summary{
+    margin-bottom: 20px;
+    background-color: var(--color-4);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 30px 80px -25px rgb(0, 183, 197, .5);
+    color: var(--color-1);
+    text-align: center;
+}
+
+.investment-summary h2{
+    color: var(--color-1);
+    text-shadow: 0px 0px 90px 0px rgb(0, 183, 197, .5);
+}
+
+/* Market Data Styles */
+.market-data {
+    padding: 20px;
+    background-color: var(--color-4);
+    border-radius: 8px;
+    box-shadow: 0px 30px 90px -25px rgb(0, 183, 197, .5);
+}
+
+.market-data h2 {
+    color: var(--color-1);
+}
+
+/* Dashboard Cards Styles */
+.dashboard-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Add gap between cards */
+    flex-wrap: wrap; /* Ensure cards wrap on smaller screens */
+    color: var(--color-3);
+}
+
+.card {
+    position: relative;
+    flex: 1px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow:  0px 0px 30px 0px rgb(0, 183, 197, .5);
+    transition: transform 0.3s; /* Add transition for hover effect */
+    min-width: 200px; /* Ensure cards have a minimum width */
+    margin: 10px; /* Add margin for spacing */
+    clear: var(--color-3);
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Add hover effect */
+}
+
+.card-header {
+    /*background-color: #007bff solid;*/
+   /* color: #fff;*/
+    padding: 10px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    display: flex;
+    align-items: center;
+    /*justify-content: space-between;*/
+    height: 90px;
+    
+}
+
+.card-header h2 {
+    color: var(--color-1);
+}
+
+.card-header i {
+    margin-right: 10px;
+    height: 20px;
+    width: 20px;
+}
+
+.card-body {
+    padding: 10px;
+    color: var(--color-3);
+}
+
+.card-body p {
+    margin: 0;
+    color: var(--color-3);
+}
+
+/* Recent Transactions Styles */
+.recent-transactions h2{
+    color: var(--color-1);
+}
+.recent-transactions table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.recent-transactions th,
+.recent-transactions td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+    color: var(--color-3);
+}
+
+.recent-transactions th {
+    background-color: #f4f4f4;
+}
+
+/* Testimonials Styles */
+.testimonials h2{
+    color: var(--color-1);
+}
+.testimonial-carousel {
+    display: flex;
+    overflow: hidden;
+    gap: 20px; /* Add gap between testimonials */
+    color: var(--color-3);
+}
+
+.testimonial-item {
+    flex: 1;
+    display: none;
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-item img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+    border: 2px solid #007bff; /* Add border to testimonial image */
+}
+
+.testimonial-text {
+    font-style: italic;
+}
+
+/* Messages Styles */
+.message {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    color: var(--color-1);
+}
+
+
+
+/* Link Styles */
+a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s; /* Add transition for hover effect */
+}
+
+a:hover {
+    background-color: #0056b3;
+}
+
+/* Footer Styles */
+footer {
+    padding: 10px;
+}
+
+footer li {
+    width: 100%;
+    margin: 1px;
+    height: 40px;
+    color: black;
+}
+
+footer li a {
+    width: 100px;
+    margin: 1px;
+}
+
+
+
+
+
+

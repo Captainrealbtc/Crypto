@@ -1,0 +1,224 @@
+/* From Uiverse.io by Userluckytian */
+.loading svg polyline{
+    fill: none;
+    stroke-width: 3;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.loading svg polyline#back{
+    fill: none;
+    stroke: #ff4d5033;
+}
+
+.loading svg polyline#front{
+    fill: none;
+    stroke: #00ffff;
+    stroke-dasharray: 48, 144;
+    stroke-dashoffset: 192;
+    animation: dash_682 2s linear infinite;
+    animation-delay: 0s;
+}
+
+
+.loading svg polyline#front2{
+    fill: none;
+    stroke: #00ffff;
+    stroke-dasharray: 48, 144;
+    stroke-dashoffset: 192;
+    animation: dash_682 2s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes dash_682{
+    72.5%{
+        opacity: 0;
+    }
+    to{
+        stroke-dashoffset: 0;
+    }
+}
+
+:root {
+    --color-1: #fff;
+    --color-2: rgb(255, 255, 255, .8);
+    --color-3: #000;
+    --color-4: #00002c;
+    --color-5: #000024;
+    --color-6: #00b7c5;
+    --color-7: #08d3d3;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url(../img/207805.gif) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.registration-page {
+    background: rgb(175, 175, 166);
+    padding: 20px;
+    max-width: 25%;
+    margin: 70px;
+    margin-right: 50px;
+    border-radius: 10px;
+    box-shadow: 10px 0 10px rgba(97, 9, 9, 0.1);
+    justify-content: center;
+    margin-left: 38%;
+    position: relative;
+}
+
+.registration-page h1 {
+    text-align: center;
+    color: var(--color-4);
+}
+
+.registration-page h2 {
+    text-align: center;
+    color: var(--color-5);
+}
+
+.registration-page form {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.registration-page label {
+    margin-top: 10px;
+    color: var(--color-5);
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.registration-page input {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+}
+
+.registration-page button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.registration-page button:hover {
+    background-color: #0056b3;
+}
+
+.registration-page .button, a{
+    color: white;
+    
+}
+a:-webkit-any-link {
+    color: var(--color-1);
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.slider {
+    position: relative;
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+    padding-left: 30px;
+    margin-top: -40%;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 2px solid var(--color-1);
+}
+
+.slide-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    font-size: 24px;
+   /* background: rgba(0, 0, 0, 0.5);*/
+    padding: 10px;
+    border-radius: 5px;
+}
+
+@keyframes slideShow {
+    0% { opacity: 1; }
+    33% { opacity: 1; }
+    66% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+.slide:nth-child(1) {
+    animation: slideShow 9s infinite;
+}
+
+.slide:nth-child(2) {
+    animation: slideShow 9s infinite 3s;
+}
+
+.slide:nth-child(3) {
+    animation: slideShow 9s infinite 6s;
+}
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    background: url('path/to/your/rotating-image.png') no-repeat center center;
+    background-size: contain;
+    animation: rotate 20s linear infinite;
+}
+
+.circle1 {
+    width: 100px;
+    height: 100px;
+    top: 10%;
+    left: 10%;
+}
+
+.circle2 {
+    width: 150px;
+    height: 150px;
+    top: 20%;
+    right: 10%;
+}
+
+.circle3 {
+    width: 200px;
+    height: 200px;
+    bottom: 10%;
+    left: 20%;
+}
+
+.circle4 {
+    width: 250px;
+    height: 250px;
+    bottom: 20%;
+    right: 20%;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
